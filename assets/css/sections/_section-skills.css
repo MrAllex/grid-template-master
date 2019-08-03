@@ -1,0 +1,136 @@
+.skills {
+  padding: 10px;
+}
+
+.skills__container {
+  display: -ms-grid;
+  display: grid;
+  padding-bottom: 20px;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  -ms-grid-rows: auto 10px auto 10px auto;
+  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+}
+
+.skill-item {
+  position: relative;
+  min-height: -webkit-calc(33vh - 12px);
+  min-height: calc(33vh - 12px);
+}
+
+.skill-item:nth-of-type(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: a1;
+}
+
+.skill-item:nth-of-type(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: a2;
+}
+
+.skill-item:nth-of-type(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: a3;
+}
+
+.skill-item:nth-of-type(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: a4;
+}
+
+.skill-item:nth-of-type(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: a5;
+}
+
+.skill-item:nth-of-type(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: a5;
+}
+
+.skill-item:nth-of-type(6) {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 7;
+  grid-area: a6;
+}
+
+.skill-item:nth-of-type(7) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: a7;
+}
+
+.skill-item:nth-of-type(8) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: a8;
+}
+
+.skill-item:nth-of-type(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: a9;
+}
+
+.skill-item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2d3651;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.skill-item__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.skill-item__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: 0;
+}
+
+.skill-item__link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=_section-skills.css.map */
