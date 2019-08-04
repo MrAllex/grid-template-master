@@ -1353,4 +1353,40 @@ a {
   background-color: #d66926;
 }
 
+.footer {
+  height: 250px;
+  background-color: #2d3651;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.fab {
+  padding: 70px 10px 10px 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.fab:hover {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: #d66926;
+}
+
+.footer_copy {
+  padding: 25px;
+}
+
 /*# sourceMappingURL=style.css.map */

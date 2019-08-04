@@ -1,0 +1,25 @@
+.footer {
+    height: 250px;
+    background-color: $color-main;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.footer__icons {
+    display: flex;
+   justify-content: center;
+}
+
+.fab {
+    padding: 70px 10px 10px 10px;
+    transition: 0.5s;
+
+    &:hover {
+        transition: 1s;
+            color: $color-accent;
+        }
+}
+
+.footer_copy {
+    padding: 25px;
+}
