@@ -66,7 +66,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-position: 50% 50%;
+  background-position: 25% 25%;
   background-size: cover;
 }
 
@@ -87,4 +87,26 @@
   padding: 20px;
   justify-content: center;
   align-items: center;
+}
+
+.skills-button {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-button__link {
+  min-width: 350px;
+  height: 60px;
+  display: block;
+  border: 2px solid  #2d3651 ;
+  background-color: rgba(45, 54, 81, 0.8);
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 1.125rem;
+  transition: background-color 0.5s;
+
+  &:hover,
+  &:focus {
+    background-color: #d66926;
+  }
 }
