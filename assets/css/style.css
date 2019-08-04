@@ -1011,4 +1011,74 @@ a {
   background-size: contain;
 }
 
+.form {
+  min-width: 100%;
+  height: 7em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #2d3651;
+}
+
+.form__button,
+.form__email,
+.form__name {
+  min-width: 430px;
+  display: inline-block;
+  padding: 18px 20px;
+  height: 60px;
+  font-size: 1.125rem;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom-color: #637588;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.115em;
+}
+
+.form__button {
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.form__button:hover, .form__button:focus {
+  background-color: #d66926;
+  border: 2px solid #ffffff;
+}
+
+.form__email,
+.form__name {
+  margin-right: 5px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #637588;
+}
+
+.form__email:active, .form__email:hover, .form__email:focus,
+.form__name:active,
+.form__name:hover,
+.form__name:focus {
+  background-color: #ffffff34;
+  border: 2px solid #e5e5e569;
+  color: #e5e5e569;
+  border-bottom-color: #ffffff;
+}
+
+.form__email {
+  margin-right: 0px;
+}
+
 /*# sourceMappingURL=style.css.map */
