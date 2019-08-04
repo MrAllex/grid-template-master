@@ -1,0 +1,126 @@
+.posts {
+    margin-top: 13px;
+    padding: 4% 11%;
+}
+.posts__container {
+    margin-top: 55px;
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: "a1 a1 a2 a3"
+                         "a4 a5 a6 a6";
+  }
+  .post-item {
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    min-height: calc(61vh - 12px);
+    background-color: $color-gray-light;
+    overflow: hidden;
+    animation-direction: normal;
+    transition: 0.5s; 
+
+    &:focus,
+    &:hover {
+        background-color: $color-gray-ultra-light;
+    }
+
+    &:focus,
+    &:hover .post-item-caption__text {
+        color: $color-main;
+    }
+
+    &:focus,
+    &:hover .post-item-caption__title {
+        color: $color-main;
+    }
+
+    &:focus,
+    &:hover .post-item__image {
+        -ms-transform: scale(1.08);
+        -moz-transform: scale(1.08);
+        -webkit-transform: scale(1.08);
+        -o-transform: scale(1.08);
+        transform: scale(1.08);
+        transition: 0.5s; 
+    }
+  }
+  
+  .post-item:nth-of-type(1) {
+    grid-area: a1
+  }
+  .post-item:nth-of-type(2) {
+    grid-area: a2
+  }
+  .post-item:nth-of-type(3) {
+    grid-area: a3
+  }
+  .post-item:nth-of-type(4) {
+    grid-area: a4
+  }
+  .post-item:nth-of-type(5) {
+    grid-area: a5
+  }
+  .post-item:nth-of-type(5) {
+    grid-area: a5
+  }
+  .post-item:nth-of-type(6) {
+    grid-area: a6
+  }
+
+  .post-item__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s; 
+    background-position: 0 0;
+    background-size: 100% 55%;
+  }
+
+  .post-item-caption {
+    display: inline-block;
+    position: relative;
+    top: 60%;
+  }
+  
+  .post-item-caption__title {
+    font-family: $font-header;
+    font-size: 18px;
+  }
+
+  .post-item-caption__text {
+    font-family: $font-main;
+    font-size: 16px;
+    color: #637588;
+    letter-spacing: 0.015px;
+    text-align: center;
+    padding: $gap;
+  }
+
+  .posts-button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .posts-button__link {
+    min-width: 350px;
+    height: 55px;
+    display: block;
+    border: 2px solid  #2d3651 ;
+    background-color: rgba(45, 54, 81, 0.8);
+    padding: 17px 20px;
+    text-align: center;
+    font-size: 1.125rem;
+    transition: background-color 0.5s;
+  
+    &:hover,
+    &:focus {
+      background-color: #d66926;
+    }
+  }
+  
+ 
