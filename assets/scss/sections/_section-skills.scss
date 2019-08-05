@@ -16,6 +16,26 @@
 .skill-item {
   position: relative;
   min-height: calc(33vh - 12px);
+  overflow: hidden;
+  
+ 
+  &:hover {
+    .skill-item__image{
+      -ms-transform: scale(1.08);
+      -moz-transform: scale(1.08);
+      -webkit-transform: scale(1.08);
+      -o-transform: scale(1.08);
+      transform: scale(1.08);
+      transition: 0.5s; 
+  
+    }
+    .skill-item__overlay {
+      opacity: 0.95;
+    }
+    .skill-item__link {
+      color: $color-accent;
+    }
+  }
 }
 
 .skill-item:nth-of-type(1) {
@@ -58,6 +78,7 @@
   background-color: #2d3651;
   opacity: 0.8;
   z-index: 1;
+  transition: 0.5s;
 }
 
 .skill-item__image {
@@ -68,6 +89,7 @@
   bottom: 0;
   background-position: 25% 25%;
   background-size: cover;
+  transition: 0.5s;
 }
 
 .skill-item__title {
@@ -87,6 +109,8 @@
   padding: 20px;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+
 }
 
 .skills-button {

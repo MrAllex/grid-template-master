@@ -23,28 +23,22 @@
     transition: 0.5s; 
 
     &:focus,
-    &:hover {
-        background-color: $color-gray-ultra-light;
-    }
-
-    &:focus,
-    &:hover .post-item-caption__text {
-        color: $color-main;
-    }
-
-    &:focus,
-    &:hover .post-item-caption__title {
-        color: $color-main;
-    }
-
-    &:focus,
-    &:hover .post-item__image {
+    &:hover { 
+      .post-item__image {
         -ms-transform: scale(1.08);
         -moz-transform: scale(1.08);
         -webkit-transform: scale(1.08);
         -o-transform: scale(1.08);
         transform: scale(1.08);
         transition: 0.5s; 
+      }
+      .post-item-caption__title {
+        color: $color-main;
+      }
+      .post-item-caption__text {
+        color: $color-main;
+      }
+      background-color: $color-gray-ultra-light;
     }
   }
   
