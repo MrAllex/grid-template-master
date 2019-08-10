@@ -9,7 +9,31 @@
     padding-bottom: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-    grid-template-areas: "a1 a1 a1 a2"
+    grid-template-areas: "a1 a1 a1 a2";
+
+    @include sm {
+  
+      display: grid;
+      padding-bottom: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      grid-template-areas: "a1"
+      "a1"
+      "a1"
+      "a2"
+      "a2";
+  }
+  @include md-sm {
+  
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "a1 a1 a2 a2 a2"
+    "a1 a1 a2 a2 a2";
+
+}
+
   }
 
   .about-item {
@@ -27,6 +51,7 @@
   }
 
   .about-item__image {
+    height: 480px;
     margin-top: 40px;
     margin-left: 50px;
     position: absolute;
@@ -36,5 +61,20 @@
     bottom: 0;
     background-position: 50% 100%;
     background-size: contain;
+
+    
+  @include lg-sm {
+  height: 480px;
+  }
+
   }
   
+
+ 
+  @include md-sm {
+  
+  }
+  
+  @include sm {
+
+  }

@@ -1,58 +1,71 @@
 .form {
-    min-width: 100%;
-    height: 7em;
-    display: flex;
-    justify-content: center;
-   align-items: center;
-   background-color: #2d3651;
-}
-
-.form__button,
-.form__email,
-.form__name{
-    min-width: 430px;
-    display: inline-block;
-    padding: 18px 20px;
-    height: 60px;
-    font-size: 1.125rem;
-    transition: background-color 0.5s;
-    border: 2px solid rgba(255, 255, 255, 0);
-    border-bottom-color: $color-gray;
-    font-family:  "Roboto", sans-serif;
-    letter-spacing: 0.115em;
-}
-
-.form__button {
-    margin-top: 5px;
-    margin-left: 5px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: $color-light;
-
-    &:hover,
-    &:focus {
-        background-color: #d66926;
-        border: 2px solid $color-light;
+    padding: 20px 0;
+    background-color: $color-main;
+  
+    &__container {
+      display: grid;
+      grid-gap: $gap;
+      max-width: $ul;
+      margin: auto;
+      padding-right: $gap;
+      padding-left: $gap;
+      @include lg-min {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include lg-md {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include md-sm {
+        grid-template-columns: 1fr 1fr;
+      }
     }
-}
+  
+    .btn-accent {
+      width: 100%;
+      height: 60px;
+      color: $color-light;
+      border-color: rgba($color-light, 0);
+      border-bottom-color: rgba($color-light, 0.20);
+      background-color: rgba($color-light, 0.10);
+      font-family: $font-main;
+      letter-spacing: 0.15em;
+      font-size: 1.125rem;
 
-.form__email,
-.form__name{
-    margin-right: 5px;
-    text-align: left; 
-    background-color: rgba(255, 255, 255, 0.05);
-    color: $color-gray;
-
-    &:active,
-    &:hover,
-    &:focus {
-        background-color: #ffffff34;
-        border: 2px solid  $color-gray-light;
-        color: $color-gray-light;
-        border-bottom-color:  $color-light;
+      &:hover,
+      &:focus {
+        border-color: $color-light;
+        background-color: $color-accent;
+      }
     }
-}
-
-.form__email {
-    margin-right: 0px;
-}
+  }
+  
+  .form-item {
+    &:nth-of-type(1) {
+      @include md-sm {
+        grid-column: 1 / span 2;
+      }
+    }
+  
+    &__input {
+      display: block;
+      width: 100%;
+      height: 60px;
+      padding-right: $gap;
+      padding-left: $gap;
+      transition: 0.5s;
+      letter-spacing: 0.15em;
+      color: $color-light;
+      border: 2px solid rgba($color-light, 0);
+      border-bottom-color: rgba($color-light, 0.25);
+      background-color: rgba($color-light, 0.05);
+      font-size: 1.125rem;
+    
+      &:hover,
+      &:focus {
+        border-color: rgba($color-light, 0.15);
+        border-bottom-color: $color-light;
+        background-color: rgba($color-light, 0.15);     
+      }
+    }
+  }
+  

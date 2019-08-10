@@ -29,6 +29,22 @@ h2 {
   color: $color-main;
   font-size:  40px;
   letter-spacing: 0.1em;
+
+  @include xl-lg {
+    font-size: 2.1rem;
+  }
+
+  @include lg-md {
+    font-size: 1.975rem;
+  }
+  @include md-sm {
+    font-size: 1.7rem;
+  }
+  @include sm {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
 }
 
 h3 {
